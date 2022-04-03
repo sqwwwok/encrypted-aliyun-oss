@@ -12,11 +12,11 @@ function decryptr(input = "") {
 }
 
 function encryptBuffer(input = Buffer.from()) {
-  return Buffer.from(encryptr(input.join(",")));
+  return Buffer.from(encryptr(input.toString("utf8")), "utf8");
 }
 
 function decryptBuffer(input = Buffer.from()) {
-  return Buffer.from(decryptr(input.toString()).split(","));
+  return Buffer.from(decryptr(input.toString("utf8")), "utf8");
 }
 
 module.exports = {
