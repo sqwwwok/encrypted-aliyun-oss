@@ -29,11 +29,17 @@ node scripts/push.js /your/file/path
 ## 下载文件
 
 ```sh
-node scripts/pull.js
+node scripts/pull.js /your/oss/file/name/before/encrypted
 ```
 
 ## 列出 OSS 上存储的加密文件
 
 ```sh
 node scripts/list.js
+```
+
+## 下载所有的 OSS 文件
+
+```sh
+node scripts/clone.js
 ```
