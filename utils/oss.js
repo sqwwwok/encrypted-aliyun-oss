@@ -9,9 +9,7 @@ const client = new OSS({
 });
 
 async function list() {
-  const res = await client.list({
-    "max-keys": 5,
-  });
+  const res = await client.list();
   return res.objects;
 }
 
