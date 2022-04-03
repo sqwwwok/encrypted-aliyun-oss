@@ -1,0 +1,9 @@
+{
+  "cryptrKey": "uQDf0AZiVR",
+  "ossConfig": {
+    "region": "oss-cn-beijing",
+    "accessKeyId": "uQDf0AZiVR",
+    "accessKeySecret": "uQDf0AZiVR",
+    "bucket": "my-bucket"
+  }
+}

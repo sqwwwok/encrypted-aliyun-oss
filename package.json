@@ -1,0 +1,21 @@
+{
+  "name": "cryptr-sync",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "esbuild src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild": "^0.14.29"
+  },
+  "dependencies": {
+    "ali-oss": "^6.17.1",
+    "chokidar": "^3.5.3",
+    "cryptr": "^6.0.2"
+  }
+}
