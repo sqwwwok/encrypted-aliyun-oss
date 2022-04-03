@@ -12,3 +12,5 @@ async function listCloudFiles(fileName) {
     listCloudFiles().then(console.log);
   }
 })();
+
+module.exports = listCloudFiles;

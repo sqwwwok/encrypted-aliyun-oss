@@ -3,7 +3,7 @@ const oss = require("../utils/oss");
 const { encryptr, decryptr, encryptBuffer } = require("../utils/cryptr");
 
 // 加密本地文件后上传到OSS
-async function pushFile(fileName) {
+async function pushLocaleFile(fileName) {
   // 清理同名的OSS文件
   const allCloudFiles = await oss.list();
   await Promise.all(
@@ -25,8 +25,8 @@ async function pushFile(fileName) {
 (() => {
   if (require.main === module) {
     const files = process.argv.slice(2);
-    files.forEach(pushFile);
+    files.forEach(pushLocaleFile);
   }
 })();
 
-module.exports = pushFile;
+module.exports = pushLocaleFile;

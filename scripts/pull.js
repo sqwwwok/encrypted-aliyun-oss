@@ -4,7 +4,7 @@ const oss = require("../utils/oss");
 const { decryptr, decryptBuffer } = require("../utils/cryptr");
 
 // 将OSS上的所有加密文件同步到本地
-async function update() {
+async function pullAllCloudFiles() {
   const cloudFiles = await oss.list();
   await Promise.all(
     cloudFiles.map(async (cloudFile) => {
@@ -22,10 +22,8 @@ async function update() {
 
 (() => {
   if (require.main === module) {
-    update();
+    pullAllCloudFiles();
   }
 })();
 
-module.exports = {
-  update,
-};
+module.exports = pullAllCloudFiles;

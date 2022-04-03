@@ -25,6 +25,4 @@ async function removeCloudFile(filename) {
   }
 })();
 
-module.exports = {
-  removeCloudFile,
-};
+module.exports = removeCloudFile;
